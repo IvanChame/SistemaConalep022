@@ -1,9 +1,3 @@
-<script>
-if (!sessionStorage.getItem("logueado")) {
-    window.location.href = "login.html";
-}
-</script>
-
 
 <!DOCTYPE html>
 <html lang="es">
