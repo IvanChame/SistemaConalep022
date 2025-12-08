@@ -20,8 +20,11 @@
     <button onclick="validarLogin()">Entrar</button>
     <p id="mensaje"></p>
 
-    <a href="register.html">Crear una cuenta</a><br>
-    <a href="recuperar.html">Recuperar contraseña</a>
+
+    <a href="{{ route('register') }}">Crear cuenta</a><br>
+    <a href="{{ route('recuperarCuenta') }}">Recuperar cuenta</a>
+
+
 </div>
 
 <script src="{{ asset('js/login.js') }}" defer></script>
