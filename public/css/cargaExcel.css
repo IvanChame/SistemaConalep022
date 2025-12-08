@@ -1,0 +1,34 @@
+/* Contenedor tipo hoja */
+.hoja {
+    background: #ffffff;
+    padding: 25px;
+    border-radius: 14px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.15);
+    margin: 25px auto;
+    max-width: 900px;
+}
+
+/* Estilo de tabla dentro de la hoja */
+.hoja table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.hoja table, 
+.hoja th, 
+.hoja td {
+    border: 1px solid #333;
+}
+
+.hoja th, 
+.hoja td {
+    padding: 8px;
+    text-align: left;
+    background: #fff;
+}
+
+.hoja-titulo {
+    font-size: 22px;
+    font-weight: bold;
+    margin-bottom: 12px;
+}

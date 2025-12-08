@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <title>Visor de Excel</title>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.18.5/xlsx.full.min.js"></script>
-    <link rel="stylesheet" href="css/Estilo.css">
+    <link rel="stylesheet" href="{{ asset('css/cargaExcel.css') }}">
 
 </head>
 <body>
@@ -17,8 +17,6 @@
 
 
 <div id="contenedor"></div>
-
-<script src="js/Escript.js"></script>
-
+<script src="{{ asset('js/cargaExcel.js') }}" defer></script>
 </body>
 </html>
