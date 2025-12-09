@@ -1,0 +1,108 @@
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: #f5f5f5;
+}
+
+/* NAVBAR */
+.navbar {
+  width: 100%;
+  background: #007F5C; /* Verde Conalep */
+  color: #fff;
+  padding: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+}
+
+.hamburger {
+  font-size: 30px;
+  cursor: pointer;
+}
+
+/* Para asegurarnos de que el ícono SÍ reciba el clic */
+#btnMenu {
+  position: relative;
+  z-index: 2000;
+}
+
+.navbar-title {
+  font-size: 20px;
+  font-weight: bold;
+  margin-left: 10px;
+}
+
+/* SIDEBAR (menú lateral) */
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: -260px; /* OCULTO */
+  width: 260px;
+  height: 100%;
+  background: #fff;
+  box-shadow: 2px 0 5px rgba(0,0,0,0.1);
+  padding-top: 70px; /* espacio para la barra */
+  transition: left 0.3s ease;
+  z-index: 999;
+}
+
+.sidebar.show {
+  left: 0; /* VISIBLE */
+}
+
+.sidebar a {
+  display: block;
+  padding: 15px;
+  color: #333;
+  text-decoration: none;
+  border-bottom: 1px solid #eee;
+  font-size: 16px;
+}
+
+.sidebar a:hover {
+  background: #eaeaea;
+}
+
+/* CONTENIDO */
+.content {
+  padding: 100px 20px;
+  margin-left: 0;
+  transition: 0.3s;
+}
+
+/* Cuando la pantalla es amplia, el sidebar está SIEMPRE visible */
+@media (min-width: 768px) {
+  .content {
+    margin-left: 260px;
+  }
+
+  .sidebar {
+    left: 0;
+  }
+}
+
+/* TARJETAS */
+.card {
+  background: #fff;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.alert {
+  background: #ffe6e6;
+  padding: 15px;
+  border-left: 5px solid red;
+  border-radius: 5px;
+}
