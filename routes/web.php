@@ -13,16 +13,6 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-
-
-Route::get('/', function () {
-    return view('dashboard');
-})->name('home');
-
-Route::get('/dashboard', function () {
-    return view('dashboard');
-})->name('dashboard');
-
 Route::get('/', function () {
     return view('login');
 })->name('login');
@@ -34,3 +24,19 @@ Route::get('/register', function () {
 Route::get('/recuperarCuenta', function () {
     return view('recuperarCuenta');
 })->name('recuperarCuenta');
+
+
+// ALUMNO
+Route::get('/alumno/dashboard', function () {
+    return view('alumno.dashboard');
+})->name('alumno.dashboard');
+
+// DOCENTE
+Route::get('/docente/dashboard', function () {
+    return view('docente.dashboard');
+})->name('docente.dashboard');
+
+// ADMIN
+Route::get('/admin/dashboard', function () {
+    return view('admin.dashboard');
+})->name('admin.dashboard');
