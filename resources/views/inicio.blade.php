@@ -5,7 +5,6 @@
 @section('content')
 
 <div class="content">
-
     <div class="card">
       <h2>Bienvenido al Dashboard</h2>
       <p>Este es un panel escolar responsive con menú deslizable.</p>
@@ -20,7 +19,6 @@
       <h3>Aviso General</h3>
       <p>Se hace del conocimiento a toda la comunidad estudiantil...</p>
     </div>
-
 </div>
 
 @endsection
