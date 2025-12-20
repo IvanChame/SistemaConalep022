@@ -29,6 +29,6 @@ function validarLogin() {
     if (loader) loader.style.display = "flex";
 
     setTimeout(() => {
-        window.location.href = "index.html";
+        window.location.href = "admin/dashboard";
     }, 1500);
 }
